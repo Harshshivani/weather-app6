@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.static(path.join(__dirname, 'public')));
-app.set('view', path.join(__dirname, 'view'));
+app.set('views', path.join(__dirname, 'view'));
 app.set('view engine', 'html');
 
 // Routes
